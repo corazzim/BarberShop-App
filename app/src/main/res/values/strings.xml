@@ -1,0 +1,37 @@
+<resources>
+    <!-- Nome do aplicativo -->
+    <string name="app_name">Barber Shop</string>
+
+    <!-- String placeholder - remova ou modifique conforme necessário -->
+    <string name="hello_blank_fragment">Bem-vindo ao Barber Shop!</string>
+
+    <!-- Hint para o Spinner de horários -->
+    <string name="spinner_hint">Horário</string>
+
+    <!-- Itens de horários para o Spinner -->
+    <string-array name="horarios">
+        <item>@string/spinner_hint</item> <!-- Hint item -->
+        <item>09:00</item>
+        <item>10:00</item>
+        <item>11:00</item>
+        <item>13:00</item>
+        <item>14:00</item>
+        <item>15:00</item>
+        <item>16:00</item>
+        <item>17:00</item>
+        <!-- Adicione mais horários conforme necessário -->
+    </string-array>
+
+    <!-- Estilo para os itens do Spinner -->
+    <style name="SpinnerItemStyle" parent="Widget.AppCompat.TextView.SpinnerItem">
+        <item name="android:textColor">#FFFFFF</item> <!-- Cor branca -->
+        <item name="android:padding">8dp</item> <!-- Espaçamento opcional -->
+    </style>
+
+    <!-- Estilo para o Dropdown do Spinner -->
+    <style name="SpinnerDropDownItemStyle" parent="Widget.AppCompat.TextView.SpinnerItem">
+        <item name="android:textColor">#FFFFFF</item> <!-- Cor branca -->
+        <item name="android:background">?attr/selectableItemBackground</item> <!-- Fundo do item selecionado -->
+        <item name="android:padding">8dp</item>
+    </style>
+</resources>

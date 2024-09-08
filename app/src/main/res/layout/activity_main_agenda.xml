@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/fundo_main"
+    tools:context=".Main_Agenda">
+
+
+    <ImageView
+        android:layout_marginTop="32dp"
+        android:src="@drawable/bemvindo"
+        android:layout_gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"/>
+
+
+    <TextView
+        android:id="@+id/title_inicio"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Pronto para um novo visual? Selecione abaixo"
+        android:textColor="@color/white"
+        android:layout_marginTop="8dp"
+        android:textSize="18sp"
+        android:layout_gravity="center"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="92dp"
+        android:orientation="vertical"
+        android:padding="8dp">
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/button_cabelo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:textAllCaps="false"
+            android:background="@drawable/button_selector"
+            android:text="Cabelo"
+            android:textColor="@color/white" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/button_barba"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:textAllCaps="false"
+            android:background="@drawable/button_selector"
+            android:text="Barba"
+            android:textColor="@color/white" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/button_barba_cabelo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:layout_marginLeft="8dp"
+            android:textAllCaps="false"
+            android:layout_marginRight="8dp"
+            android:background="@drawable/button_selector"
+            android:text="Cabelo + Barba"
+            android:textColor="@color/white" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/button_kids"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAllCaps="false"
+            android:layout_marginBottom="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:background="@drawable/button_selector"
+            android:text="Criança"
+            android:textColor="@color/white" />
+
+        <!-- LinearLayout para o botão de data e spinner de horário lado a lado -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="32dp"
+            android:padding="8dp">
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/data_picker"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginEnd="8dp"
+                android:textAllCaps="false"
+                android:background="@drawable/bg_button"
+                android:text="Selecionar Data"
+                android:textColor="@color/white" />
+
+            <Spinner
+                android:id="@+id/hora_spinner"
+                android:layout_width="0dp"
+                android:layout_height="48dp"
+                android:layout_weight="1"
+                android:layout_marginStart="8dp"
+                android:background="@drawable/bg_button"
+                android:spinnerMode="dropdown"
+                android:paddingLeft="16dp"
+                android:paddingRight="16dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"/>
+        </LinearLayout>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/button_confirmar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:textAllCaps="false"
+            android:layout_marginTop="32dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:background="@drawable/bg_button"
+            android:text="Confirmar"
+            android:textColor="@color/white" />
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,9 @@
+<!-- styles.xml -->
+<resources>
+    <!-- Tema personalizado para AlertDialog -->
+    <style name="CustomAlertDialogTheme" parent="Theme.AppCompat.Light.Dialog.Alert">
+        <item name="android:background">@drawable/bg_dailog</item> <!-- Substitua com seu background -->
+        <item name="android:textColorPrimary">#FFFFFF</item> <!-- Muda a cor do texto principal -->
+        <item name="android:textColorSecondary">#FFFFFF</item> <!-- Muda a cor do texto secundário -->
+    </style>
+</resources>

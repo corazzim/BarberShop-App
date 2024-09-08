@@ -1,0 +1,16 @@
+
+<resources xmlns:tools="http://schemas.android.com/tools">
+<!-- Base application theme. -->
+    <style name="Base.Theme.BarberShop" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Primary color for the app -->
+        <item name="colorPrimary">@color/cinza3</item>
+        <item name="colorPrimaryContainer">@color/cinza3</item> <!-- Adicione isso -->
+        <!-- Secondary colors -->
+        <item name="colorOnPrimary">@color/black</item>
+        <item name="colorOnSecondary">@color/black</item>
+    </style>
+
+
+<style name="Theme.BarberShop" parent="Base.Theme.BarberShop" />
+
+</resources>
